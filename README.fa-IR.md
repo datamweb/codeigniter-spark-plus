@@ -7,7 +7,6 @@
  \________ \| '_ \ / _` | '__| |/ / | |_) | | | | / __|
   ________) | |_) | (_| | |  |   <  |  __/| | |_| \__ \
  |v1.0.0___/| .__/ \__,_|_|  |_|\_\ |_|   |_|\__,_|___/
-<<<<<<< HEAD
             | | اضافه کردن دستورات بیشتر به دستورات پیشفرض خط فرمان کدیگنایتر!
             |_|
 ```
@@ -29,4 +28,53 @@
 ```
 public $psr4 = [
         //اضافه کنید
+        'Datamweb\SparkPlus' => APPPATH . 'ThirdParty\codeIgniter-spark-plus\src',
+```
+
+# فهرست دستورات
+
+در این بخش ما فهرستی از دستورات و توضیحات مربوط به انها را قرار میدهیم. شما همچنین میتوانید با استفاده از دستور `php spark help make:helper` (یا make:lang و ...) توضیحات بیشتری از روش استفاده آنها را مشاهده کنید.
+
+### دستور ``make:lang``
+
+این دستور به شما کمک میکند تا یک فایل `Language` ایجاد کنید. همچنین این دستور به شما امکان میدهد تا بتتوانید فایل زبان خود را در زیر پوشه ای خاص ایجاد کنید(en,fa,fr ...). شما باید برای اینکار از گزینه ``--flag`` استفاده کنید که به شما امکان میدهد ب صورت (Language\en ,Language\fa, Language\fr ...) فایل زبان را ایجاد کنید.
+روشهای استفاده از این دستور در زیر آمده است:
+
+1. ``php spark make:lang``
+2. ``php spark make:lang LangFileName``
+3. ``php spark make:lang LangFileName --namespace CodeIgniter``
+4. ``php spark make:lang --namespace YourNameSpace``
+5. ``php spark make:lang LangFileName --flag fa``
+6. ``php spark make:lang LangFileName --flag fa --namespace YourNameSpace``
+
+> خروجی دستور ``php spark make:lang LangFileName --flag fa``
+
+```
+PS P:\MyGitHubWork\CI4> php spark make:lang LangFileName --flag fa
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-15 07:20:58 UTC-05:00
+
+File created: APPPATH\Language\fa\LangFileName.php
+
+```
+
+###  دستور ``make:view``
+
+این دستور به شما کمک میکند تا یک فایل `view` ایجاد کنید. با این دستور شما میتوانید فایل ویو را در زیر پوشه ای خاص(e.g: mysubfolder1/mysubfolder2). ایجاد کنید. برای اینکار کافیست از گزینه  ``--sub-folder mysubfolder1`` استفاده کنید.
+روشهای استفاده از این دستور در زیر آمده است:
+
+1. ``php spark make:view``
+2. ``php spark make:view my_view_file``
+3. ``php spark make:view my_view_file --namespace CodeIgniter``
+4. ``php spark make:view --namespace YourNameSpace``
+5. ``make:view my_view_file --sub-folder Panel/Admin --namespace CodeIgniter``
+
+> OutPut ``php spark make:view my_view_file --sub-folder Panel/Admin``
+
+```
+P:\MyGitHubWork\CI4>php spark make:view my_view_file --sub-folder Panel/Admin
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-16 03:19:37 UTC-05:00
+
+File created: APPPATH\Views\Panel\Admin\my_view_file.php
 ```
