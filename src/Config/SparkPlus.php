@@ -31,7 +31,7 @@ class SparkPlus extends BaseConfig
         
         'text_in_lang_file' => <<<'EOL'
                                 /**
-                                 * This file was created by "SparK Plus".
+                                 * This file was created by "Spark Plus".
                                  * Change this text through file "Config\SparkPlus.php".
                                  * Just change variable "text_in_lang_file".
                                  */
