@@ -3,7 +3,7 @@
   "type": "package",
   "description": "The package adds more commands for CI4 command-line interface!",
   "keywords": [
-    "php spark", "CI4", "SparkPlus","add commands to CLI",
+    "php spark", "CI4", "SparkPlus","add commands to CLI"
   ],
   "homepage": "https://github.com/datamweb/codeigniter-spark-plus",
   "authors": [
