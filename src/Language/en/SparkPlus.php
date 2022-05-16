@@ -25,11 +25,11 @@ return [
                 'methodsForTest' => <<<'EOL'
 
                                         Please enter your methods for test?
-                                        If have multi methods, use "&"
-                                        If you do not have a method, use "n"
+                                        If have multi methods, use "%s"
+                                        If you do not have a method, use "%s"
 
                                         Example:
-                                            public function IfMyNamePooyaReturnTrue($par1, $par2)&public function IfMyNameNotPooyaReturnFalse($data1, $data2)
+                                            public function IfMyNamePooyaReturnTrue($par1, $par2)%spublic function IfMyNameNotPooyaReturnFalse($data1, $data2)
                                             
                                         EOL,
             ],
@@ -46,11 +46,11 @@ return [
                 'methodsForHelper' => <<<'EOL'
 
                                         Please enter your methods for helper?
-                                        If have multi methods use "&"
-                                        If you do not have a method, use "n"
+                                        If have multi methods use "%s"
+                                        If you do not have a method, use "%s"
 
                                         Example:
-                                            public function myOneHeleprMethod($par1, $par2)&protected function myTwoHeleprMethod($data1, $data2)
+                                            public function myOneHeleprMethod($par1, $par2)%sprotected function myTwoHeleprMethod($data1, $data2)
                                             
                                         EOL,
             ],
@@ -61,11 +61,11 @@ return [
                 'methodsForTrait' => <<<'EOL'
 
                                         Please enter your methods for trait?
-                                        If have multi methods use "&"
-                                        If you do not have a method, use "n"
+                                        If have multi methods use "%s"
+                                        If you do not have a method, use "%s"
 
                                         Example:
-                                            public function myOneTraitMethod($par1, $par2)&protected function myTwoTraitMethod($data1, $data2)
+                                            public function myOneTraitMethod($par1, $par2)%sprotected function myTwoTraitMethod($data1, $data2)
                                             
                                         EOL,
             ],
@@ -73,14 +73,14 @@ return [
             // Library
             'lib' => [
                 'libName' => 'Please enter your Library name(e.g: MyLibrary)?',
-                'methodsForlib' => <<<'EOL'
+                'methodsForLib' => <<<'EOL'
 
                                         Please enter your methods for Library?
-                                        If have multi methods use "&"
-                                        If you do not have a method, use "n".
+                                        If have multi methods use "%s"
+                                        If you do not have a method, use "%s".
 
                                         Example:
-                                            public function myOneLibraryMethod($par1, $par2)&protected function myTwoLibraryMethod($data1, $data2)
+                                            public function myOneLibraryMethod($par1, $par2)%sprotected function myTwoLibraryMethod($data1, $data2)
                                             
                                         EOL,
             ],
