@@ -57,3 +57,24 @@ CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-15 07:20:58 UTC-05:0
 File created: APPPATH\Language\fa\LangFileName.php
 
 ```
+
+###  دستور ``make:view``
+
+این دستور به شما کمک میکند تا یک فایل `view` ایجاد کنید. با این دستور شما میتوانید فایل ویو را در زیر پوشه ای خاص(e.g: mysubfolder1/mysubfolder2). ایجاد کنید. برای اینکار کافیست از گزینه  ``--sub-folder mysubfolder1`` استفاده کنید.
+روشهای استفاده از این دستور در زیر آمده است:
+
+1. ``php spark make:view``
+2. ``php spark make:view my_view_file``
+3. ``php spark make:view my_view_file --namespace CodeIgniter``
+4. ``php spark make:view --namespace YourNameSpace``
+5. ``make:view my_view_file --sub-folder Panel/Admin --namespace CodeIgniter``
+
+> OutPut ``php spark make:view my_view_file --sub-folder Panel/Admin``
+
+```
+P:\MyGitHubWork\CI4>php spark make:view my_view_file --sub-folder Panel/Admin
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-16 03:19:37 UTC-05:00
+
+File created: APPPATH\Views\Panel\Admin\my_view_file.php
+```
