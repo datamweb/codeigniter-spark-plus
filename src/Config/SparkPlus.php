@@ -25,6 +25,7 @@ class SparkPlus extends BaseConfig
     public $views = [
         'make:lang'         => 'Datamweb\\SparkPlus\\Commands\\Generators\\Views\\lang.tpl.php',
         'make:view'         => 'Datamweb\\SparkPlus\\Commands\\Generators\\Views\\view.tpl.php',
+        'make:helper'       => 'Datamweb\\SparkPlus\\Commands\\Generators\\Views\\helper.tpl.php',
 
     ];
 
@@ -43,6 +44,13 @@ class SparkPlus extends BaseConfig
                                  * Change this text through file "Config\SparkPlus.php".
                                  * Just change variable "text_in_view_file".
                                  -->
+                                EOL,        
+        'text_in_helper_file' => <<<'EOL'
+                                /**
+                                 * This file was created by "Spark Plus".
+                                 * Change this text through file "Config\SparkPlus.php".
+                                 * Just change variable "text_in_helper_file".
+                                 */
                                 EOL,        
                     
     ];

@@ -78,3 +78,37 @@ CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-16 03:19:37 UTC-05:0
 
 File created: APPPATH\Views\Panel\Admin\my_view_file.php
 ```
+
+### ``make:helper``
+
+This command helps you to create a ``helper`` file. In this command you can also introduce any value of the methods you want. To create several methods in your file `helper`, just use `&`. and If you do not have a method, use  `n`. In this command you can create a helper file under a specific folder(e.g: `mysubfolder1/mysubfolder2`). You must use option ``--sub-folder mysubfolder1/mysubfolder2`` to create the file in subfolder(mysubfolder1/mysubfolder2).
+Below is how to use this command:
+
+1. ``php spark make:helper``
+2. ``php spark make:helper helper_file_name``
+3. ``php spark make:helper --namespace CodeIgniter``
+4. ``php spark make:helper --namespace YourNameSpace``
+5. ``php spark make:helper helper_file_name --sub-folder mysubfolder1/mysubfolder2``
+6. ``php spark make:helper helper_file_name --sub-folder mysubfolder1/mysubfolder2 --namespace YourNameSpace``
+
+> OutPut ``php spark make:helper --sub-folder my-sub-folder1/my-sub-folder2``
+
+```
+P:\MyGitHubWork\CI4>php spark make:helper --sub-folder my-sub-folder1/my-sub-folder2
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-17 10:57:21 UTC-05:00
+
+Please enter your helper name(e.g: my_helper_name)? : my_helper_name
+
+Please enter your methods for helper?
+If have multi methods use "&"
+If you do not have a method, use "n"
+
+Example:
+    function myOneHeleprMethod($par1, $par2)&function myTwoHeleprMethod($data1, $data2)
+     : function myOneHeleprMethod($par1, $par2)&function myTwoHeleprMethod($data1, $data2)                              
+
+File created: APPPATH\Helpers\my-sub-folder1\my-sub-folder2\my_helper_name_helper.php
+
+P:\MyGitHubWork\CI4>
+```
