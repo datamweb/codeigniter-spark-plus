@@ -42,7 +42,7 @@ return [
 
             // helper
             'helper' => [
-                'helperName' => 'Please enter your helper name(e.g: my_heelpeer)?',
+                'helperName' => 'Please enter your helper name(e.g: my_helper_name)?',
                 'methodsForHelper' => <<<'EOL'
 
                                         Please enter your methods for helper?
@@ -50,7 +50,7 @@ return [
                                         If you do not have a method, use "%s"
 
                                         Example:
-                                            public function myOneHeleprMethod($par1, $par2)%sprotected function myTwoHeleprMethod($data1, $data2)
+                                            function myOneHeleprMethod($par1, $par2)%sfunction myTwoHeleprMethod($data1, $data2)
                                             
                                         EOL,
             ],
