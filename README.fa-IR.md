@@ -112,3 +112,39 @@ File created: APPPATH\Helpers\my-sub-folder1\my-sub-folder2\my_helper_name_helpe
 
 P:\MyGitHubWork\CI4>
 ```
+
+### دستور ``make:lib``
+
+این دستور به شمادر ایجاد یک فایل `Library` کمک می کند. دراین دستور شما میتوانید قبل از ایجاد فایل مورد نظر متد های خود را معرفی کنید، به این ترتیب فایل با متد های معرفی شده ایجاد خواهد شد. برای ایجاد  `Library` با چند متد از کارکتر`&` استفاده کنید. در صورتی که متدی مد نظر ندارید از کارکتر`n` استفاده کنید. همچنین در صورت نیاز به ایجاد فایل `Library` در زیر شاخه ای خاص(برای مثال: `mysubfolder1/mysubfolder2`)شما میتوانید به صورت  `php spark make:lib mysubfolder1/mysubfolder2/MyLibraryName` از دستور استفاده کنید. به این ترتیب فایل مورد نظر در مسیر (`mysubfolder1/mysubfolder2`) ایجاد میشود.
+روشهای استفاده از این دستور در زیر آمده است:
+
+1. ``php spark make:lib``
+2. ``php spark make:lib MyLibraryName``
+3. ``php spark make:lib --namespace CodeIgniter``
+4. ``php spark make:lib --namespace YourNameSpace``
+5. ``php spark make:lib mysubfolder1/mysubfolder2/MyLibraryName``
+6. ``php spark make:lib mysubfolder1/mysubfolder2/MyLibraryName --namespace YourNameSpace``
+
+> خروجی دستور ``php spark make:lib``
+
+```
+P:\MyGitHubWork\CI4>php spark make:lib
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-18 08:44:39 UTC-05:00
+
+Please enter your Library name(e.g: MyLibrary)? : MyLibrary
+
+Please enter your methods for Library?
+If have multi methods use "&"
+If you do not have a method, use "n".
+
+Example:
+    public function myOneLibraryMethod($par1, $par2)&protected function myTwoLibraryMethod($data1, $data2)
+     : public function myOneLibraryMethod($par1, $par2)&protected function myTwoLibraryMethod($data1, $data2)
+
+
+File created: APPPATH\Libraries\MyLibrary.php
+
+
+P:\MyGitHubWork\CI4>
+```

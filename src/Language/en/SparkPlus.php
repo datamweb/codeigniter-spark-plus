@@ -72,7 +72,7 @@ return [
 
             // Library
             'lib' => [
-                'libName' => 'Please enter your Library name(e.g: MyLibrary)?',
+                'libName' => 'Please enter your Library name(e.g: MyLibraryName)?',
                 'methodsForLib' => <<<'EOL'
 
                                         Please enter your methods for Library?
