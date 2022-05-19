@@ -148,3 +148,38 @@ File created: APPPATH\Libraries\MyLibrary.php
 
 P:\MyGitHubWork\CI4>
 ```
+
+### دستور ``make:trait``
+
+این دستور به شمادر ایجاد یک فایل `trait` کمک می کند. دراین دستور شما میتوانید قبل از ایجاد فایل مورد نظر متد های خود را معرفی کنید، به این ترتیب فایل با متد های معرفی شده ایجاد خواهد شد. برای ایجاد  `trait` با چند متد از کارکتر`&` استفاده کنید. در صورتی که متدی مد نظر ندارید از کارکتر`n` استفاده کنید. همچنین در صورت نیاز به ایجاد فایل `Library` در زیر شاخه ای خاص(برای مثال: `mysubfolder1/mysubfolder2`)شما میتوانید به صورت  `php spark make:trait mysubfolder1/mysubfolder2/MyTrafileName` از دستور استفاده کنید. به این ترتیب فایل مورد نظر در مسیر (`mysubfolder1/mysubfolder2`) ایجاد میشود.
+روشهای استفاده از این دستور در زیر آمده است:
+
+1. ``php spark make:trait``
+2. ``php spark make:trait MyTrafileName``
+3. ``php spark make:trait --namespace CodeIgniter``
+4. ``php spark make:trait --namespace YourNameSpace``
+5. ``php spark make:trait mysubfolder1/mysubfolder2/MyTrafileName``
+6. ``php spark make:trait mysubfolder1/mysubfolder2/MyTrafileName --namespace YourNameSpace``
+
+> خروجی دستور ``php spark make:trait``
+
+```
+P:\MyGitHubWork\CI4>php spark make:trait
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-19 06:49:16 UTC-05:00
+
+Please enter your trait name(e.g: MyTrraitName)? : MyTrafileName
+
+Please enter your methods for trait?
+If have multi methods use "&"
+If you do not have a method, use "n"
+
+Example:
+    public function myOneTraitMethod($par1, $par2)&protected function myTwoTraitMethod($data1, $data2)
+     : public function myOneTraitMethod($par1, $par2)&protected function myTwoTraitMethod($data1, $data2)
+
+
+File created: APPPATH\Traits\MyTrafileNameTrait.php
+
+P:\MyGitHubWork\CI4>
+```

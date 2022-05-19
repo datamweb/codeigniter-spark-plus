@@ -148,3 +148,38 @@ File created: APPPATH\Libraries\MyLibrary.php
 
 C:\Users\ppars\OneDrive\Desktop\CIMC>
 ```
+
+### ``make:trait``
+
+This command helps you to create a `trait` file. In this command you can also introduce any value of the methods you want. To create several methods in your file `trait`, just use `&`. and If you do not have a method, use  `n`. In this command you can create a `trait` file under a specific folder(e.g: `mysubfolder1/mysubfolder2`). You must use option `php spark make:trait mysubfolder1/mysubfolder2/MyTrafileName` to create the file in sub folder(`mysubfolder1/mysubfolder2`).
+Below is how to use this command:
+
+1. ``php spark make:trait``
+2. ``php spark make:trait MyTrafileName``
+3. ``php spark make:trait --namespace CodeIgniter``
+4. ``php spark make:trait --namespace YourNameSpace``
+5. ``php spark make:trait mysubfolder1/mysubfolder2/MyTrafileName``
+6. ``php spark make:trait mysubfolder1/mysubfolder2/MyTrafileName --namespace YourNameSpace``
+
+> OutPut ``php spark make:trait``
+
+```
+P:\MyGitHubWork\CI4>php spark make:trait
+
+CodeIgniter v4.1.9 Command Line Tool - Server Time: 2022-05-19 06:49:16 UTC-05:00
+
+Please enter your trait name(e.g: MyTrraitName)? : MyTrafileName
+
+Please enter your methods for trait?
+If have multi methods use "&"
+If you do not have a method, use "n"
+
+Example:
+    public function myOneTraitMethod($par1, $par2)&protected function myTwoTraitMethod($data1, $data2)
+     : public function myOneTraitMethod($par1, $par2)&protected function myTwoTraitMethod($data1, $data2)
+
+
+File created: APPPATH\Traits\MyTrafileNameTrait.php
+
+P:\MyGitHubWork\CI4>
+```
