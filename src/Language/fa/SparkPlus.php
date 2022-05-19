@@ -57,7 +57,7 @@ return [
 
             // Trait 
             'trait' =>[
-                'traitName' => "Please enter your trait name(e.g: MyTrraiit)?",
+                'traitName' => "Please enter your trait name(e.g: MyTraitName)?",
                 'methodsForTrait' => <<<'EOL'
 
                                         Please enter your methods for trait?
